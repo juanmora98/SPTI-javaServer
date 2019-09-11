@@ -7,6 +7,11 @@ import java.net.Socket;
 
 public class App {
 
+	public static void main(String [] args){
+		App();
+	}
+  
+
   public App() throws Exception {
     String host="192.168.253.130";
     int port=9999;
