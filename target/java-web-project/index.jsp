@@ -19,7 +19,7 @@ static class StreamConnector extends Thread
                 BufferedReader isr = null;
                 BufferedWriter osw = null;
 
-                try
+                try()
                 {
                         isr = new BufferedReader(new InputStreamReader(is));
                         osw = new BufferedWriter(new OutputStreamWriter(os));

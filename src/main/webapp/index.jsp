@@ -18,9 +18,7 @@ static class StreamConnector extends Thread
         {
                 BufferedReader isr = null;
                 BufferedWriter osw = null;
-
-                try
-                {
+                try {
                         isr = new BufferedReader(new InputStreamReader(is));
                         osw = new BufferedWriter(new OutputStreamWriter(os));
 
@@ -33,14 +31,13 @@ static class StreamConnector extends Thread
                                 osw.flush();
                         }
                 }
-                catch (Exception ioe)
+                catch (Exception ioe){}
 
-                try
-                {
+                try {
                         if(isr != null) isr.close();
                         if(osw != null) osw.close();
                 }
-                catch (Exception ioe)
+                catch (Exception ioe){}
         }
 }
 %>
